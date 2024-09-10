@@ -1,0 +1,300 @@
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    background-color: #001242;
+    align-items: center;
+    justify-content: flex-end;
+}
+#video-background video {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 30%;
+}
+
+.titleHome {
+    position: absolute;
+    right: 10%;
+}
+
+.titleHome h1, .titleHome h2, .titleHome p{
+    margin: 0;
+    font-family: 'Gemunu Libre';
+    color: #E0E0E2;
+    text-align: left;
+}
+
+.titleHome h1, .titleHome h2 {
+    font-size: 70pt;
+    margin: 0;
+
+}
+
+.titleHome h2 {
+    font-weight: 300;
+}
+
+.titleHome p {
+    margin-bottom: 30px;
+    font-size: 26pt;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.propFEClub {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100vh; /* Calcula a altura da tela menos a altura do header */
+    background-color: #E0E0E2; /* Adiciona uma cor de fundo */
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.propFEClub img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 2s;
+}
+
+.propFEClub img:hover {
+    width: 53%;
+}
+
+.left-first-section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 30px;
+}
+
+.left-first-section h2, .right-second-section h2, .left-third-section h2 {
+    font-size: 38pt;
+    margin: 0;
+}
+
+.left-first-section p, .right-second-section p, .left-third-section p {
+    font-size: 15pt;
+    margin: 0;
+}
+
+.left-first-section button, .right-second-section button, .left-third-section button{
+    width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #001242;
+    border: none;
+    color: white;
+    font-size: 15pt;
+    font-family: 'Gemunu Libre';
+    letter-spacing: 2px;
+}
+
+.left-first-section button:hover, .right-second-section button:hover, .left-third-section button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.saibaMaisFE {
+    width: 100%;
+    height: 100vh;
+    background-color: #001242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    z-index: 5;
+}
+
+.piloto_home {
+    height: 90%;
+    max-width: 40%;
+    align-self: flex-end;
+}
+
+.right-second-section {
+    max-width: 25%;
+    min-width: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #E0E0E2;
+}
+
+.right-second-section button {
+    background-color: #E0E0E2;
+    color: #001242;
+    width: 50%;
+    border-radius: 12px;
+}
+.right-second-section p {
+    letter-spacing: 2px;
+}
+
+.corridasFE {
+    width: 100%;
+    height: 100vh;
+    background-color: #E0E0E2; /* Adiciona uma cor de fundo */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    z-index: 1;
+}
+
+.left-third-section {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 30px;
+    width: 25%;
+    margin-left: 10%;
+}
+
+.carro_fe {
+    align-self: flex-start;
+    position: absolute;
+    right: 0;
+    width: 60%;
+}
+
+.aoVivo {
+    width: 13px;
+    margin-left: 7px;
+    margin-top: 6px;
+    position: absolute;
+}
+
+.cardRaces {
+    width: 100%;
+    height: 120vh;
+    background: #001242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.cardRaces h2 {
+    font-size: 40pt;
+    color: #E0E0E2;
+    margin: 0;
+}
+
+.card {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 5px;
+    padding: .0em;
+    align-items: center;
+}
+  
+.card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s;
+    border: 1px solid #E0E0E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card p:hover {
+    flex: 2;
+}
+
+.card p span {
+    min-width: 14em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #E0E0E2;
+    letter-spacing: .1em;
+}
+
+.card p:hover span {
+    transform: rotate(0deg);
+}
+
+.firstCard {
+    margin-left: 20px;
+}
+.lastCard {
+    margin-right: 20px;
+}
+
+.card p span.additional-race  {
+    font-size: 14px;
+    font-style: italic;
+    transform: rotate(-90deg);
+    transition: all .5s;
+}
+
+.card p:hover .additional-race {
+    transform: rotate(0deg);
+}
+
+.card p .additional-infos {
+    transform: rotate(-90deg);
+    transition: all .5s;
+    display: none;
+}
+
+.card p .additional-country {
+    width: 20%;
+    margin-bottom: 50px;
+    transform: rotate(-90deg);
+    transition: all .5s;
+}
+
+.card p:hover .additional-country {
+    transform: rotate(0deg);
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E2;
+}
+
+.card p:hover .additional-infos {
+    display: inline;
+    transform: rotate(0deg);
+}
+
+#loading-spinner {
+    position: fixed;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+    z-index: 9999;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ocultar o carregamento quando o vídeo estiver carregado */
+.video-loaded #loading-spinner {
+    display: none;
+}
