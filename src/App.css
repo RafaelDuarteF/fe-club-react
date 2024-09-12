@@ -43,6 +43,11 @@ header {
   position: fixed;
   transition: all 1s;
   z-index: 10;
+  top: 0;
+}
+
+header.scrolled {
+  background-color: rgba(37, 37, 37, 0.6); 
 }
 
 footer {
@@ -70,10 +75,6 @@ footer {
 .imgProfile {
   height: 60%;
   margin: 0px 30px;
-}
-
-.header-scrolled {
-  background-color: rgba(37, 37, 37, 0.6); /* Cor de fundo cinza quando o cabeçalho é rolado */
 }
 
 .footer-content {
