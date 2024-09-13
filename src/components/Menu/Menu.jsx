@@ -26,7 +26,7 @@ export default function Menu({menuOpened, setMenuOpened}) {
                     <RedirectMenu redirect={() => handleRedirect('/sobre')} title={'Sobre a FE-Club'} icon={"bx-collection"} />
                     <RedirectMenu redirect={() => handleRedirect('/')} title={'Seu Perfil'} icon={"bxs-car"} />
                     <RedirectMenu redirect={() => handleRedirect('/')} title={'Corridas'} icon={"bx-line-chart"} />
-                    <RedirectMenu redirect={() => handleRedirect('/')} title={'Login'} icon={"bx-book-alt"} />
+                    <RedirectMenu redirect={() => handleRedirect('/Login')} title={'Login'} icon={"bx-book-alt"} />
                     <li>
                         <div className="profile-details">
                             <div className="profile-content">
