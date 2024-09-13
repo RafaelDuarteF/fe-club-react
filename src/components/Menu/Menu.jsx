@@ -23,7 +23,7 @@ export default function Menu({menuOpened, setMenuOpened}) {
                 </div>
                 <ul className="nav-links">
                     <RedirectMenu redirect={() => handleRedirect('/')} title={'Home'} icon={"bx-grid-alt"} />
-                    <RedirectMenu redirect={() => handleRedirect('/')} title={'Sobre a FE-Club'} icon={"bx-collection"} />
+                    <RedirectMenu redirect={() => handleRedirect('/sobre')} title={'Sobre a FE-Club'} icon={"bx-collection"} />
                     <RedirectMenu redirect={() => handleRedirect('/')} title={'Seu Perfil'} icon={"bxs-car"} />
                     <RedirectMenu redirect={() => handleRedirect('/')} title={'Corridas'} icon={"bx-line-chart"} />
                     <RedirectMenu redirect={() => handleRedirect('/')} title={'Login'} icon={"bx-book-alt"} />
