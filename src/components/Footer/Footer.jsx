@@ -9,10 +9,10 @@ export default function Footer() {
                 <div className="footer-infos">
                     <div className="pages-redirects">
                         <ul>
-                            <li><a onClick="redirectPage('index', true)">Home</a></li>
+                            <li><a onClick={() => navigate('/')}>Home</a></li>
                             <li><a href="#">Corridas</a></li>
-                            <li><a onClick="redirectPage('login', true)">Login</a></li>
-                            <li><a onClick="redirectPage('learnMore', true)">FE-Club</a></li>
+                            <li><a onClick={() => navigate('/')}>Login</a></li>
+                            <li><a onClick={() => navigate('/sobre')}>FE-Club</a></li>
                         </ul>
                     </div>
                     <p>RUA DO PINHEIRO 402, PINHEDOS, 13131313 SP - BRASIL | CNPJ 19.995.390/0001-05</p>

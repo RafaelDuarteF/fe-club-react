@@ -20,8 +20,12 @@ import carroFe from "../assets/img/home/carro_fe.png";
 import aoVivo from "../assets/img/home/ao_vivo.png"; // Imagem do botão "Ao Vivo"
 import CardRace from "../components/Home/CardRace";
 import homeVideo from "../assets/img/home/home.mp4";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+
+    const navigate = useNavigate();
+
     return (
         <>
             <Header />
@@ -42,7 +46,7 @@ export default function Home() {
                 <div className="left-first-section">
                     <h2>Dispute o melhor da Fórmula E com a comunidade e seus amigos!</h2>
                     <p>Compita em tempo real durante uma temporada inteira!</p>
-                    <button onClick="redirectPage('login', true)">Faça parte agora!</button>
+                    <button onClick={() => navigate('/')}>Faça parte agora!</button>
                 </div>
                 <img src={feTech} alt="FE Tech" />
             </section>
@@ -51,7 +55,7 @@ export default function Home() {
                 <div className="right-second-section">
                     <h2>Fórmula E</h2>
                     <p>Entenda sobre os diferenciais da Fórmula mais interativa de todos os tempos!</p>
-                    <button onClick="redirectPage('learnMore', true)">Saiba mais!</button>
+                    <button onClick={() => navigate('/')}>Saiba mais!</button>
                 </div>
             </section>
             <section className="corridasFE">

@@ -20,7 +20,7 @@ export default function Sobre() {
                         <p>Aprecie o propósito de nosso jogo na Fórmula mais interativa e divertida!</p>
                     </div>
                     <div className="right-section-sobre">
-                    <img src={imagemSobre} alt="Imagem FE-Club" />
+                        <img src={imagemSobre} alt="Imagem FE-Club" />
                     </div>
                     
                 </section>
