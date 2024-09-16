@@ -1,7 +1,3 @@
-const galleryContainer = document.querySelector('.gallery-container');
-const galleryControls = ['anterior', 'proximo'];
-const galleryItems = document.querySelectorAll('.race-img');
-
 class Carousel {
   constructor(container, items, controls) {
     this.carouselContainer = container;
@@ -24,7 +20,7 @@ class Carousel {
   }
 
   setCurrentState(direction) {
-    if (direction.className == 'gallery-controls-anterior') {
+    if (direction.className === 'gallery-controls-anterior') {
       this.carouselArray.unshift(this.carouselArray.pop());
     } else {
       this.carouselArray.push(this.carouselArray.shift());
@@ -34,24 +30,37 @@ class Carousel {
 
   setControls() {
     this.carouselControls.forEach((control) => {
-      document.querySelector(`.gallery-controls-${control}`).innerText = '';
+      const element = document.querySelector(`.gallery-controls-${control}`);
+      if (element) {
+        element.innerText = '';
+      }
     });
   }
 
   useControls() {
     const triggers = [
-      document.querySelector(`.gallery-controls-anterior`),
-      document.querySelector(`.gallery-controls-proximo`),
+      document.querySelector('.gallery-controls-anterior'),
+      document.querySelector('.gallery-controls-proximo'),
     ];
     triggers.forEach((control) => {
-      control.addEventListener('click', (e) => {
-        e.preventDefault();
-        this.setCurrentState(control);
-      });
+      if (control) {
+        control.addEventListener('click', (e) => {
+          e.preventDefault();
+          this.setCurrentState(control);
+        });
+      }
     });
   }
 }
 
 export default function NewCarousel() {
-  return new Carousel(galleryContainer, galleryItems, galleryControls);
+  const container = document.querySelector('.gallery-container');
+  const controls = ['anterior', 'proximo'];
+  const items = document.querySelectorAll('.race-img');
+
+  if (container && items.length > 0) {
+    return new Carousel(container, items, controls);
+  } else {
+    return null; 
+  }
 }

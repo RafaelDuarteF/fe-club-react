@@ -361,3 +361,17 @@ display: none;
 .sidebar .profile-details .job{
 font-size: 12px;
 }
+
+@media screen and (max-width: 720px){
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+  }
+  .sidebar.close{
+    left: -100%;
+  }
+  .sidebar .profile-details{
+    width: 100%;
+  }
+}

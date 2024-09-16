@@ -6,12 +6,14 @@ import './Corridas.css';
 
 export default function Corridas() {
   const informacoes = RaceInfo();
-  //Slider
+
   useEffect(() => {
-    const newcarrousel = NewCarousel();
-    newcarrousel.setControls();
-    newcarrousel.useControls();
-  }, []);
+    const carousel = NewCarousel();
+    if (carousel) {
+      carousel.setControls();
+      carousel.useControls();
+    }
+  }, []); 
 
   return (
     <>
@@ -22,28 +24,26 @@ export default function Corridas() {
             <h1>Proxima Corrida</h1>
             <div className="gallery">
               <div className="gallery-container">
-                {informacoes.map(
-                  ({ id, city, round, date, flag, hour, background }) => (
-                    <div
-                      key={id}
-                      className={'race-img race-img-' + id}
-                      style={{ background: `url(${background})` }}
-                    >
-                      <span className="race-city">{city}</span>
-                      <span className="race-round">{round}</span>
-                      <div className="race-date">
-                        <span>{date.day}</span>
-                        <span>{date.month}</span>
-                      </div>
-                      <img
-                        className="race-flag"
-                        src={flag.src}
-                        alt={flag.alt}
-                      ></img>
-                      <span className="race-hour">{hour}</span>
+                {informacoes.map(({ id, city, round, date, flag, hour, background }) => (
+                  <div
+                    key={id}
+                    className={'race-img race-img-' + id}
+                    style={{ background: `url(${background})` }}
+                  >
+                    <span className="race-city">{city}</span>
+                    <span className="race-round">{round}</span>
+                    <div className="race-date">
+                      <span>{date.day}</span>
+                      <span>{date.month}</span>
                     </div>
-                  ),
-                )}
+                    <img
+                      className="race-flag"
+                      src={flag.src}
+                      alt={flag.alt}
+                    />
+                    <span className="race-hour">{hour}</span>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="gallery-controls">
@@ -53,7 +53,6 @@ export default function Corridas() {
           </div>
         </section>
       </div>
-      sc
     </>
   );
 }
