@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import perfilIcon from "../../assets/img/default/perfil.png";
 import RedirectMenu from "./RedirectsMenu/RedirectMenu";
 
-export default function Menu({menuOpened, setMenuOpened}) {
+export default function Menu({ menuOpened, setMenuOpened }) {
 
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ export default function Menu({menuOpened, setMenuOpened}) {
                 <ul className="nav-links">
                     <RedirectMenu redirect={() => handleRedirect('/')} title={'Home'} icon={"bx-grid-alt"} />
                     <RedirectMenu redirect={() => handleRedirect('/sobre')} title={'Sobre a FE-Club'} icon={"bx-collection"} />
-                    <RedirectMenu redirect={() => handleRedirect('/')} title={'Seu Perfil'} icon={"bxs-car"} />
+                    <RedirectMenu redirect={() => handleRedirect('/perfil')} title={'Seu Perfil'} icon={"bxs-car"} />
                     <RedirectMenu redirect={() => handleRedirect('/')} title={'Corridas'} icon={"bx-line-chart"} />
                     <RedirectMenu redirect={() => handleRedirect('/Login')} title={'Login'} icon={"bx-book-alt"} />
                     <li>

@@ -1,0 +1,219 @@
+section {
+    height: 100vh;
+    background-color: #001242;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 0;
+}
+
+.left {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 8%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.title{
+    margin-top: 80px;
+}
+
+.left .title {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.left h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    align-items: center;
+    font-weight: 500;
+}
+
+.left img {
+    width: 70%;
+}
+
+.right {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    animation: myAnim2 2s ease 0s 1 normal forwards;
+    justify-content: center;
+}
+
+.right ul, .right li {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.btn-editar {
+    margin-top: 5%;
+    height: 8%;
+    width: 30%;
+    border-radius: 5%;
+    background-color: #fff;
+    color: #001242;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 1000ms;
+}
+
+.time-pilotos .left-time-pilotos {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 5%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.time-pilotos .left-time-pilotos .title-left {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.name-team {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.brasao-time {
+    width: 30%;
+}
+
+.points-team {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.btn-editar-time {
+    margin-top: 5%;
+    height: 50%;
+    width: 20%;
+    border-radius: 2%;
+    background-color: #fff;
+    color: #001242;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 1000ms;
+}
+
+.right-time-pilotos {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+    gap: 4%;
+}
+
+.container-right {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 4%;
+}
+
+.title-right {
+    font-size: 2rem;
+    color: #001242;
+    font-weight: 500;
+}
+
+.container-pilotos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 4%;
+}
+
+.piloto {
+    font-size: 1.5rem;
+    color: #001242;
+    gap: 5%;
+    width: 60%;
+    height: 15em;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.nome-piloto {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.container-pilotos img {
+    width: 70%;
+    border: 2px solid #001242;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+.btn-editar-pilotos {
+    height: 30%;
+    width: 40%;
+    border-radius: 5%;
+    background-color: #001242;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 1000ms;
+}
+
+.aviso-mercado {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn-editar:hover {
+    background-color: #ffffffc4;
+}
+
+.btn-editar-pilotos:hover {
+    background-color: #001242bd;
+}
+
+.btn-editar-time:hover {
+    background-color: #ffffffc4;
+}
+
+.container-pilotos img:hover {
+    width: 75%;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes myAnim2 {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
