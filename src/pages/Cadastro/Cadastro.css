@@ -134,6 +134,14 @@
       width: 100%;
     }
   
+    .formsLogin {
+        gap: 15px !important;
+      }
+
+    .registerText {
+        margin-bottom: 0px;
+      }
+
    .lineMiddle {
     display: none;
    }
