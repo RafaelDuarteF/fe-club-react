@@ -1,118 +1,185 @@
+.backArrowIcon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  stroke: #001242;
+  transition: transform 0.3s ease;
+}
+
+.backArrowIcon:hover .icon {
+  transform: scale(1.1);
+  stroke: #00b7ff;
+}
+
 .mainContainer {
-    display: grid;
-    grid-template-columns: 35% 3px 65%;
-    height: 100vh;
-  }
-  
-  .loginContainer {
-    background-color: #E0E0E2;
+  display: grid;
+  grid-template-columns: 35% 3px 65%;
+  height: 100vh;
+}
+
+.loginContainer {
+  background-color: #E0E0E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formsLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+}
+
+.felogo {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  align-self: center;
+  justify-self: center;
+}
+
+.defaultFormText {
+  font-family: 'Gemunu Libre';
+  font-size: 20pt;
+  font-weight: 300;
+  color: #001242;
+  margin-bottom: 0;
+}
+
+.formDefaultStyle {
+  border: none;
+  border-bottom: 3px solid #001242;
+  background-color: #E0E0E2;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+.formDefaultStyle::placeholder {
+  font-family: 'Gemunu Libre';
+  color: #606060;
+  font-size: 20px;
+}
+
+.registerText {
+  color: #606060;
+  font-family: 'Gemunu Libre';
+  font-size: 25pt;
+  transition: all 0.25s;
+}
+
+.registerText:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.loginButton:hover{
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 60px;
+  width: 250px;
+  background-color: #001242;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s;
+}
+
+.loginButton p {
+  color: white;
+  font-family: 'Gemunu Libre';
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.lineMiddle {
+  background-color: #001242;
+  width: 3px;
+  box-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 40px #00b7ff;
+  animation: neon-glow 1.5s infinite alternate;
+}
+
+.videoBackground {
+  position: relative;
+  background-color: #001242;
+  overflow: hidden;
+}
+
+.videoBackground p {
+  position: absolute;
+  font-family: 'Gemunu Libre';
+  font-size: 50px;
+  color: white;
+  right: 30px;
+  top: 10px;
+  opacity: 73%;
+  z-index: 1;
+}
+
+.videoBackground video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 75%;
+}
+
+@media screen and (max-width: 800px) {
+
+  .mainContainer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .formsLogin {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 80%;
-  }
-  
-  .felogo {
-    height: 120px;
-    width: 120px;
-    border-radius: 60px;
-    align-self: center;
-    justify-self: center;
-  }
-  
-  .defaultFormText {
-    font-family: 'Gemunu Libre';
-    font-size: 25pt;
-    font-weight: 300;
-    color: #001242;
-    margin-bottom: 0;
-  }
-  
-  .formDefaultStyle {
-    border: none;
-    border-bottom: 3px solid #001242;
-    background-color: #E0E0E2;
-    padding: 5px;
-    font-size: 16px;
+    height: 100dvh;
     width: 100%;
-    outline: none;
   }
-  
-  .formDefaultStyle::placeholder {
-    font-family: 'Gemunu Libre';
-    color: #606060;
-    font-size: 20px;
+
+  .loginContainer {
+    gap: 15px;
   }
-  
-  .registerText {
-    color: #606060;
-    font-family: 'Gemunu Libre';
-    font-size: 25pt;
-  }
-  
-  .loginButton:hover{
-    cursor: pointer;
-    opacity: 70%;
+
+ .lineMiddle {
+  display: none;
+ }
+
+  .formDefaultStyle {
+    width: 100%;
+    height: 100%;
+    font-size: 40pt;
+    text-align: center;
   }
 
   .loginButton {
-    display: flex;
+    width: 80%;
+    font-size: 40pt;
+    align-self: center;
+    text-align: center;
     justify-content: center;
+  }
+
+  .felogo {
+    height: 80px;
+    width: 80px;
+    display: flex;
     align-items: center;
-    height: 60px;
-    width: 250px;
-    background-color: #001242;
-    border-radius: 100px;
-    cursor: pointer;
-    border: none;
-    transition: all 0.25s;
+    justify-content: center;
+    margin-top: 8%;
   }
-  
-  .loginButton p {
-    color: white;
-    font-family: 'Gemunu Libre';
-    font-size: 28px;
-    font-weight: 700;
-  }
-  
-  .lineMiddle {
-    background-color: #001242;
-    width: 3px;
-    box-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 40px #00b7ff;
-    animation: neon-glow 1.5s infinite alternate;
-  }
-  
-  .videoBackground {
-    position: relative;
-    background-color: #001242;
-    overflow: hidden;
-  }
-  
-  .videoBackground p {
-    position: absolute;
-    font-family: 'Gemunu Libre';
-    font-size: 50px;
-    color: white;
-    right: 30px;
-    top: 10px;
-    opacity: 73%;
-    z-index: 1;
-  }
-  
-  .videoBackground video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    opacity: 75%;
-  }
-  
+}

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Login.css";
+import "./Cadastro.css";
 import { useNavigate } from "react-router-dom";
 
-// Importação das imagem
+// Importação das imagens
 import feClubLogo from "../../assets/img/default/feclub-logo.jfif";
 import home from "../../assets/img/home/home.mp4";
 
@@ -28,27 +28,26 @@ const BackArrowIcon = () => {
   );
 };
 
-export default function LoginPage() {
+export default function CadastroPage() {
+  const [username, setUsername] = useState("");
+  const [Email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [knowPassword, setknowPassword] = useState("");
   const navigate = useNavigate();
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const validateEntrys = (username, password) => {
-    return username && password;
-  };
-
-  const login = () => {
-    if (validateEntrys(username, password)) {
-      if (username === "user" && password === "123456") {
-        alert("Logado com sucesso");
+  const cadastrar = () => {
+    if (username && Email && password && knowPassword) {
+      if (password !== knowPassword) {
+        alert("As senhas informadas não correspondem, tente novamente");
         setUsername("");
         setPassword("");
-        navigate("/");
+        setknowPassword("");
+        setEmail("");
       } else {
-        alert("Senha invalida");
+        alert("Cadastro realizado com sucesso!");
       }
     } else {
-      alert("Alguns dos campos estão faltando!");
+      alert("Alguns campos estão faltando!");
     }
   };
 
@@ -60,30 +59,48 @@ export default function LoginPage() {
         <form className="formsLogin">
           <img src={feClubLogo} alt="logo" className="felogo" />
 
-          <label className="defaultFormText">Usuário:</label>
+          <label className="defaultFormText">Crie o seu Username:</label>
           <input
             type="text"
             className="formDefaultStyle"
-            placeholder="Digite o seu username"
+            placeholder="Digite o seu Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
 
-          <label className="defaultFormText">Senha:</label>
+          <label className="defaultFormText">E-mail:</label>
+          <input
+            type="text"
+            className="formDefaultStyle"
+            placeholder="Digite o seu E-mail"
+            value={Email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <label className="defaultFormText">Crie sua senha:</label>
           <input
             type="password"
             className="formDefaultStyle"
-            placeholder="Digite a sua senha:"
+            placeholder="Digite sua senha:"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <button className="loginButton" onClick={login}>
-            <p>ENTRAR</p>
+          <label className="defaultFormText">Confirme sua senha:</label>
+          <input
+            type="password"
+            className="formDefaultStyle"
+            placeholder="Digite sua senha:"
+            value={knowPassword}
+            onChange={(e) => setknowPassword(e.target.value)}
+          />
+
+          <button className="cadastroButton" onClick={cadastrar}>
+            <p>CADASTRAR</p>
           </button>
 
-          <p className="registerText" onClick={() => navigate("/Cadastro")}>
-            Cadastre-se
+          <p className="registerText" onClick={() => navigate("/Login")}>
+            Login
           </p>
         </form>
       </div>
