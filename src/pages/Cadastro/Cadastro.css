@@ -52,13 +52,18 @@
   }
   
   .registerText {
-    align-self: center;
     color: #606060;
     font-family: 'Gemunu Libre';
     font-size: 25pt;
+    transition: all 0.25s;
     margin-bottom: 30px;
+    align-self: center;
   }
   
+  .registerText:hover {
+    cursor: pointer;
+    opacity: 70%;
+  }
   .cadastroButton:hover{
     cursor: pointer;
     opacity: 70%;

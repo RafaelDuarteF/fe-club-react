@@ -55,12 +55,13 @@ export default function LoginPage() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
-
-                    <p className="registerText">Cadastre-se</p>
-
+                    
                     <button className="loginButton" onClick={login}>
                         <p>ENTRAR</p>
                     </button>
+                   
+                    <p className="registerText" onClick={() => navigate('/Cadastro')}>Cadastre-se</p>
+
                 </form>
             </div>
 
