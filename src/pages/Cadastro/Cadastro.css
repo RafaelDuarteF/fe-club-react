@@ -135,7 +135,7 @@
     }
   
     .formsLogin {
-        gap: 15px;
+        gap: 15px !important;
       }
 
     .registerText {
