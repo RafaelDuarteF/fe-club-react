@@ -131,6 +131,10 @@
     width: 100%;
   }
 
+  .loginContainer {
+    gap: 15px;
+  }
+
  .lineMiddle {
   display: none;
  }
