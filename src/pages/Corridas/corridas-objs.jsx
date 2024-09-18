@@ -243,6 +243,83 @@ const raceInfo = [
   },
 ];
 
-export default function RaceInfo() {
-  return raceInfo;
+const pilots = [
+  {
+    id: '01',
+    posicao: 1,
+    nome: 'Nick Cassidy',
+    equipe: 'Jaguar',
+    pontos: '167 PTS',
+  },
+  {
+    id: '02',
+    posicao: 2,
+    nome: 'Pascal Wehrlein',
+    equipe: 'Tag Heuer',
+    pontos: '142 PTS',
+  },
+  {
+    id: '03',
+    posicao: 3,
+    nome: 'Mitch Evans',
+    equipe: 'Jaguar',
+    pontos: '132 PTS',
+  },
+  {
+    id: '04',
+    posicao: 4,
+    nome: 'Oliver Rowland',
+    equipe: 'Nissan',
+    pontos: '131 PTS',
+  },
+  {
+    id: '05',
+    posicao: 5,
+    nome: 'Jake Dennis',
+    equipe: 'Andretti',
+    pontos: '113 PTS',
+  },
+  {
+    id: '06',
+    posicao: 6,
+    nome: 'Jean-Eric',
+    equipe: 'DS Automobiles',
+    pontos: '101 PTS',
+  },
+  {
+    id: '07',
+    posicao: 7,
+    nome: 'Antonio Felix Costa',
+    equipe: 'Tag Heuer',
+    pontos: '84 PTS',
+  },
+  {
+    id: '08',
+    posicao: 8,
+    nome: 'Maximilian Gunther',
+    equipe: 'Maserati',
+    pontos: '69 PTS',
+  },
+  {
+    id: '09',
+    posicao: 9,
+    nome: 'Stoffel Vandoorne',
+    equipe: 'DS Automobiles',
+    pontos: '53 PTS',
+  },
+  {
+    id: '10',
+    posicao: 10,
+    nome: 'Jake Hughes',
+    equipe: 'Mc Laren',
+    pontos: '46 PTS',
+  },
+];
+
+export default function RaceInfo(obj) {
+  if (obj == 'raceInfo') {
+    return raceInfo;
+  } else {
+    return pilots;
+  }
 }
