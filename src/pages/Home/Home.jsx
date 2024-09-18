@@ -46,7 +46,7 @@ export default function Home() {
                 <div className="left-first-section">
                     <h2>Dispute o melhor da Fórmula E com a comunidade e seus amigos!</h2>
                     <p>Compita em tempo real durante uma temporada inteira!</p>
-                    <button onClick={() => navigate('/')}>Faça parte agora!</button>
+                    <button onClick={() => navigate('/cadastro')}>Faça parte agora!</button>
                 </div>
                 <img src={feTech} alt="FE Tech" />
             </section>
@@ -55,14 +55,14 @@ export default function Home() {
                 <div className="right-second-section">
                     <h2>Fórmula E</h2>
                     <p>Entenda sobre os diferenciais da Fórmula mais interativa de todos os tempos!</p>
-                    <button onClick={() => navigate('/')}>Saiba mais!</button>
+                    <button onClick={() => navigate('/sobre')}>Saiba mais!</button>
                 </div>
             </section>
             <section className="corridasFE">
                 <div className="left-third-section">
                     <h2>Corridas</h2>
                     <p>Tenha acesso a todas as informações em tempo real das corridas de Fórmula E!</p>
-                    <button>Ao Vivo <img className="aoVivo" src={aoVivo} alt="Ao Vivo" /></button>
+                    <button onClick={() => navigate('/corridas')}>Ao Vivo <img className="aoVivo" src={aoVivo} alt="Ao Vivo" /></button>
                 </div>
                 <img className="carro_fe" src={carroFe} alt="Carro Fórmula E" />
             </section>

@@ -308,23 +308,32 @@
     }
 
     .titleHome h1, .titleHome h2, .titleHome p {
-        font-size: 5vw;
+        font-size: 10vw;
         text-align: center;
+        width: 100%;
     }
 
     .titleHome {
-        right: 5%;
+        width: 100vw;
+        right: 0%;
+        padding: 0px 10px;
     }
+
 
     /* Seção propFEClub */
     .propFEClub {
         flex-direction: column;
         height: auto;
-        padding: 20px;
+        padding: 60px 20px;
         gap: 20px;
     }
 
     .propFEClub img {
+        width: 90%;
+    }
+    
+    .propFEClub img:hover {
+        transform: none;
         width: 90%;
     }
 
@@ -356,11 +365,11 @@
         flex-direction: column;
         height: auto;
         gap: 20px;
-        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 60px 20px;
     }
 
     .piloto_home {
@@ -397,7 +406,7 @@
     .corridasFE {
         flex-direction: column;
         height: auto;
-        padding: 20px;
+        padding: 60px 20px;
         padding-bottom: 0;
     }
 
@@ -435,6 +444,14 @@
     /* Cards de corridas */
     .cardRaces h2 {
         font-size: 8vw;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .cardRaces {
+        height: auto;
+        gap: 10px;
+        padding-bottom: 20px;
     }
 
     .card {
@@ -442,8 +459,13 @@
         gap: 10px;
     }
 
+    .card {
+        width: 95%;
+    }
+
     .card p {
         width: 100%;
+        padding: 30px 0px;
     }
 
     .card p span {

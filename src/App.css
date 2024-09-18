@@ -375,4 +375,7 @@ font-size: 12px;
   .sidebar .profile-details {
     width: 100vw;
   }
+  .copy {
+    margin-top: 25px;
+  }
 }
