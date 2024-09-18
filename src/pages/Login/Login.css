@@ -1,3 +1,23 @@
+.backArrowIcon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  stroke: #001242;
+  transition: transform 0.3s ease;
+}
+
+.backArrowIcon:hover .icon {
+  transform: scale(1.1);
+  stroke: #00b7ff;
+}
+
 .mainContainer {
   display: grid;
   grid-template-columns: 35% 3px 65%;
@@ -28,7 +48,7 @@
 
 .defaultFormText {
   font-family: 'Gemunu Libre';
-  font-size: 25pt;
+  font-size: 20pt;
   font-weight: 300;
   color: #001242;
   margin-bottom: 0;

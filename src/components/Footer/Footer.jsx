@@ -1,8 +1,7 @@
-import React from "react";
-import menuIcon from "../../assets/img/default/menu.png";
-import perfilIcon from "../../assets/img/default/perfil.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+    const navigate = useNavigate()
     return (
         <footer>
             <div className="footer-content">
@@ -11,7 +10,7 @@ export default function Footer() {
                         <ul>
                             <li><a onClick={() => navigate('/')}>Home</a></li>
                             <li><a href="#">Corridas</a></li>
-                            <li><a onClick={() => navigate('/')}>Login</a></li>
+                            <li><a onClick={() => navigate('/login')}>Login</a></li>
                             <li><a onClick={() => navigate('/sobre')}>FE-Club</a></li>
                         </ul>
                     </div>
