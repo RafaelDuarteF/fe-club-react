@@ -17,7 +17,7 @@ export default function Footer() {
                     </div>
                     <p>RUA DO PINHEIRO 402, PINHEDOS, 13131313 SP - BRASIL | CNPJ 19.995.390/0001-05</p>
                 </div>
-                <p>© 2024 FE-Club. Todos os direitos reservados.</p>
+                <p className="copy">© 2024 FE-Club. Todos os direitos reservados.</p>
             </div>
         </footer>
     );
