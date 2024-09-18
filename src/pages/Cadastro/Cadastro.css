@@ -29,7 +29,7 @@
   
   .defaultFormText {
     font-family: 'Gemunu Libre';
-    font-size: 25pt;
+    font-size: 20pt !important; 
     font-weight: 300;
     color: #001242;
     margin-bottom: 0;
