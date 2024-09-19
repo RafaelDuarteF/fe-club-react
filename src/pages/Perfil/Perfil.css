@@ -106,7 +106,7 @@ main{
 
 .btn-editar-time {
     margin-top: 5%;
-    height: 50%;
+    height: 40%;
     width: 20%;
     border-radius: 2%;
     background-color: #fff;
@@ -123,7 +123,6 @@ main{
     align-items: center;
     justify-items: center;
     background-color: #fff;
-    gap: 4%;
 }
 
 .container-right {
@@ -165,7 +164,7 @@ main{
 }
 
 .container-pilotos img {
-    width: 70%;
+    width: 90%;
     border: 2px solid #001242;
     border-radius: 100%;
     cursor: pointer;
@@ -173,9 +172,9 @@ main{
 }
 
 .btn-editar-pilotos {
-    height: 50%;
-    width: 30%;
-    border-radius: 2%;
+    height: 35%;
+    width: 20%;
+    border-radius: 1%;
     background-color: #001242;
     color: #fff;
     font-size: 1.3rem;
@@ -203,7 +202,11 @@ main{
 }
 
 .container-pilotos img:hover {
-    width: 75%;
+    width: 100%;
+}
+
+.aviso-mercado-mobile{
+    display: none;
 }
 
 @keyframes myAnim {
@@ -228,4 +231,134 @@ main{
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .title{
+        font-size: 2rem !important;
+    }
+
+    .left img{
+        width: 80%;
+    }
+
+    .left h3{
+        font-size: 1.5rem;
+    }
+
+    .seu-carro{
+        grid-template-columns: none;
+    }
+
+    .right ul{
+        list-style-type: none;  
+        text-align: center;
+    }
+
+    .btn-editar{
+        width: 30%;
+    }
+
+    .right ul li{
+        font-size: 1.5rem;
+    }
+
+    .time-pilotos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-time-pilotos {
+        margin-bottom   : 20%;
+    }
+
+    .btn-editar-time{
+        width: 35%;
+        border-radius: 1%;
+        height: fit-content;
+
+    }
+
+    .container-right{
+        gap: 0;
+    }
+
+    .container-pilotos {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .piloto{
+        gap: 0;
+        height: 10em;
+    }
+
+    .btn-editar-pilotos{
+        width: 40%;
+        height: 100%;
+    }
+
+    .aviso-mercado{
+        display: none;
+    }
+
+    .aviso-mercado-mobile{
+        font-size: 1.2rem;
+    }
+
+    .right-time-pilotos{
+        padding: 5%;
+    }
+
+    main{
+        overflow-x: visible;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .title{
+        font-size: 2rem !important;
+    }
+
+    .left img{
+        width: 80%;
+    }
+
+    .left h3{
+        font-size: 1.5rem;
+    }
+
+    .seu-carro{
+        grid-template-columns: none;
+    }
+
+    .right ul{
+        list-style-type: none;  
+        text-align: center;
+    }
+
+    .btn-editar{
+        width: 30%;
+    }
+
+    .right ul li{
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
