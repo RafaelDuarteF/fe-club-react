@@ -1,8 +1,7 @@
-import React from "react";
-import menuIcon from "../../assets/img/default/menu.png";
-import perfilIcon from "../../assets/img/default/perfil.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+    const navigate = useNavigate()
     return (
         <footer>
             <div className="footer-content">
@@ -10,14 +9,14 @@ export default function Footer() {
                     <div className="pages-redirects">
                         <ul>
                             <li><a onClick={() => navigate('/')}>Home</a></li>
-                            <li><a href="#">Corridas</a></li>
-                            <li><a onClick={() => navigate('/')}>Login</a></li>
+                            <li><a  onClick={() => navigate('/corridas')}>Corridas</a></li>
+                            <li><a onClick={() => navigate('/login')}>Login</a></li>
                             <li><a onClick={() => navigate('/sobre')}>FE-Club</a></li>
                         </ul>
                     </div>
-                    <p>RUA DO PINHEIRO 402, PINHEDOS, 13131313 SP - BRASIL | CNPJ 19.995.390/0001-05</p>
+                    <p>Av. Senador Teotônio Vilela, 261, Interlagos – São Paulo – SP, CEP 04801-010. | CNPJ 19.995.390/0001-05</p>
                 </div>
-                <p>© 2024 FE-Club. Todos os direitos reservados.</p>
+                <p className="copy">© 2024 FE-Club. Todos os direitos reservados.</p>
             </div>
         </footer>
     );

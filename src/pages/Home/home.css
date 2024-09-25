@@ -298,3 +298,181 @@
 .video-loaded #loading-spinner {
     display: none;
 }
+
+/* Para telas com largura máxima de 768px (típico de tablets e celulares) */
+@media screen and (max-width: 768px) {
+
+    /* Ajuste do vídeo e título na tela inicial */
+    #video-background video {
+        height: 100vh;
+    }
+
+    .titleHome h1, .titleHome h2, .titleHome p {
+        font-size: 10vw;
+        text-align: center;
+        width: 100%;
+    }
+
+    .titleHome {
+        width: 100vw;
+        right: 0%;
+        padding: 0px 10px;
+    }
+
+
+    /* Seção propFEClub */
+    .propFEClub {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 20px;
+        gap: 20px;
+    }
+
+    .propFEClub img {
+        width: 90%;
+    }
+    
+    .propFEClub img:hover {
+        transform: none;
+        width: 90%;
+    }
+
+    .left-first-section {
+        width: 90%;
+        text-align: center;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-first-section h2 {
+        font-size: 6vw;
+    }
+
+    .left-first-section p {
+        font-size: 4vw;
+    }
+
+    .left-first-section button {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    /* Seção saibaMaisFE */
+    .saibaMaisFE {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+    }
+
+    .piloto_home {
+        max-width: 80%;
+        height: auto;
+        align-self: center;
+        border-bottom: 1px solid #E0E0E2;
+    }
+
+    .right-second-section {
+        max-width: 90%;
+        text-align: center;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-second-section h2 {
+        font-size: 6vw;
+    }
+
+    .right-second-section p {
+        font-size: 4vw;
+    }
+
+    .right-second-section button {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    /* Seção corridasFE */
+    .corridasFE {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 20px;
+        padding-bottom: 0;
+    }
+
+    .left-third-section {
+        width: 90%;
+        text-align: center;
+        gap: 15px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-third-section h2 {
+        font-size: 6vw;
+    }
+
+    .left-third-section p {
+        font-size: 4vw;
+    }
+
+    .left-third-section button {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    .carro_fe {
+        width: 90%;
+        position: relative;
+        align-self: flex-start;
+        transform: rotate(180deg);
+    }
+
+    /* Cards de corridas */
+    .cardRaces h2 {
+        font-size: 8vw;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .cardRaces {
+        height: auto;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .card p {
+        width: 100%;
+        padding: 30px 0px;
+    }
+
+    .card p span {
+        transform: rotate(0);
+    }
+
+    .firstCard, .lastCard {
+        margin: 0;
+    }
+}
