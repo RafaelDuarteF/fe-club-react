@@ -28,7 +28,6 @@ export default function Home() {
 
     return (
         <>
-            <Header />
             <div className="video-background-container">
                 <div id="video-background">
                     <video autoPlay muted loop>
@@ -83,7 +82,6 @@ export default function Home() {
                     <CardRace firstOrLast={'lastCard'} image={mexico} local={'Mexico City'} data={'13 jan 2024'} horaQualificacao={'10:00'} horaCorrida={'12:00'} />
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

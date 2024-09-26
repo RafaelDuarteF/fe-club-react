@@ -12,7 +12,6 @@ export default function Sobre() {
     return (
 
         <>
-            <Header />
             <div className="pageLearnBody">
                 <section className="propLearn">
                     <div className="left-section">
@@ -72,7 +71,6 @@ export default function Sobre() {
                     </p>
                 </section>
             </div>
-            <Footer />
         </>
     );
 }

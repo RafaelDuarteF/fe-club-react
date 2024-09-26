@@ -11,14 +11,20 @@ import Home from './pages/Home/Home';
 import Sobre from './pages/Sobre/Sobre';
 import LoginPage from './pages/Login/Login';
 import Corridas from './pages/Corridas/Corridas';
+import LayoutPadrao from './components/LayoutPadrao/LayoutPadrao';// Importando o layout padrão
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Home />} />
-      <Route path="/sobre" element={<Sobre />} />
+      {/* Rotas que usam o layout com Header e Footer */}
+      <Route element={<LayoutPadrao />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/corridas" element={<Corridas />} />
+      </Route>
+
+      {/* Rotas sem Header e Footer */}
       <Route path="/login" element={<LoginPage />} />
-      <Route path="/corridas" element={<Corridas />} />
       <Route path="/cadastro" element={<CadastroPage />} />
     </>,
   ),
