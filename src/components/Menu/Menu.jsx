@@ -3,6 +3,7 @@ import perfilIcon from '../../assets/img/default/perfil.png';
 import RedirectMenu from './RedirectsMenu/RedirectMenu';
 
 export default function Menu({ menuOpened, setMenuOpened }) {
+  const navigate = useNavigate();
 
   const handleFecharMenu = () => {
     setMenuOpened((menu) => !menu);
@@ -33,7 +34,7 @@ export default function Menu({ menuOpened, setMenuOpened }) {
             icon={'bx-collection'}
           />
           <RedirectMenu
-            redirect={() => handleRedirect('/')}
+            redirect={() => handleRedirect('/perfil')}
             title={'Seu Perfil'}
             icon={'bxs-car'}
           />

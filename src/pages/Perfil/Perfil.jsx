@@ -12,7 +12,7 @@ import piloto2 from '../../assets/img/Perfil/piloto2.png';
 
 export default function Perfil() {
   const [timeLeft, setTimeLeft] = useState('');
-  const countDownDate = new Date("September 24, 2024 00:00:00").getTime(); // Data ajustada
+  const countDownDate = new Date("September 24, 2024 00:00:00").getTime();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,7 +32,7 @@ export default function Perfil() {
       }
     }, 1000);
 
-    return () => clearInterval(interval); // Limpa o intervalo quando o componente for desmontado
+    return () => clearInterval(interval); 
   }, [countDownDate]);
 
   return (
@@ -77,19 +77,33 @@ export default function Perfil() {
               </div>
             </div>
             <button className="btn-editar-pilotos">EDITAR PILOTOS</button>
-            <span className="aviso-mercado" style={{ color: timeLeft.includes('FECHADO') ? 'red' : 'black' }}>
-            O mercado fecha em {timeLeft}
-            </span>
 
-            <span className="aviso-mercado-mobile" style={{ color: timeLeft.includes('FECHADO') ? 'red' : 'black' }}>
-            O mercado fecha em 
-            </span>
-            <span className="aviso-mercado-mobile" style={{ color: timeLeft.includes('FECHADO') ? 'red' : 'black' }}>
-            {timeLeft}
-            </span>
+            {/* Renderiza o aviso somente se o mercado não estiver fechado */}
+            { !timeLeft.includes('FECHADO') && (
+              <>
+                <span className="aviso-mercado" style={{ color: timeLeft.includes('FECHADO') ? 'red' : 'black' }}>
+                  O mercado fecha em {timeLeft}
+                </span>
+
+                <span className="aviso-mercado-mobile" style={{ color: timeLeft.includes('FECHADO') ? 'red' : 'black' }}>
+                  O mercado fecha em 
+                </span>
+                <span className="aviso-mercado-mobile" style={{ color: timeLeft.includes('FECHADO') ? 'red' : 'black' }}>
+                  {timeLeft}
+                </span>
+              </>
+            )}
+
+            {/* Renderiza a mensagem "O MERCADO ESTÁ FECHADO!" se estiver fechado */}
+            { timeLeft.includes('FECHADO') && (
+              <span className="aviso-mercado-fechado" style={{ color: 'red' }}>
+                {timeLeft}
+              </span>
+            )}
           </div>
         </section>
       </main>
+    
     </>
   );
 }

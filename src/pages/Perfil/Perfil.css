@@ -259,24 +259,26 @@ main{
     }
 
     .btn-editar{
-        width: 30%;
+        width: 30% !important;
     }
 
     .right ul li{
         font-size: 1.5rem;
     }
 
+    .left-time-pilotos{
+        height: 500px !important;
+    }
+
     .time-pilotos{
         display: flex;
         flex-direction: column;
+        height: fit-content;
     }
 
-    .left-time-pilotos {
-        margin-bottom   : 20%;
-    }
 
     .btn-editar-time{
-        width: 35%;
+        width: 25% !important;
         border-radius: 1%;
         height: fit-content;
 
@@ -298,7 +300,7 @@ main{
 
     .btn-editar-pilotos{
         width: 40%;
-        height: 100%;
+        height: 100% !important;
     }
 
     .aviso-mercado{
@@ -311,10 +313,15 @@ main{
 
     .right-time-pilotos{
         padding: 5%;
+        gap: 1%;
     }
 
     main{
         overflow-x: visible;
+    }
+
+    .container-pilotos img{
+        width: 75% !important;
     }
 }
 
@@ -343,11 +350,86 @@ main{
     }
 
     .btn-editar{
-        width: 30%;
+        width: 15%;
+        height: 15%
     }
 
     .right ul li{
         font-size: 1.5rem;
+    }
+
+    .time-pilotos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-time-pilotos{
+        height: 50%;
+        background-color: #fff;
+        gap: 0 !important;
+    }
+
+    .left-time-pilotos img{
+        width: 20%;
+    }
+
+    .right-time-pilotos{
+        height: 50%;
+    }
+
+    .piloto{
+        height: 10em;
+        width: 50%;
+        color: #fff;
+    }
+
+    .piloto img{
+        width: 50%;
+    }
+
+    .container-pilotos img{
+        border: 2px solid #fff;
+    }
+    .container-pilotos img:hover {
+        width: 55%;
+    }
+
+    .title-right{
+        color: #fff;
+    }
+
+    .title-left{
+        color: #001242 !important;
+    }
+
+    .name-team{
+        color: #001242;
+    }
+
+    .btn-editar-time{
+        background-color: #001242;
+        color: #fff;
+        width: 15%;
+        height: 50%;
+        border-radius: 5%;
+    }
+
+    .points-team{
+        color: #001242;
+    }
+
+
+
+    .right-time-pilotos{
+        height: 50%;
+        background-color: #001242;
+    }
+
+    .btn-editar-pilotos{
+        height: 65%;
+        background-color: #fff !important;
+        color: #001242;
+        border-radius: 5%;
     }
 
     
