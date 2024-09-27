@@ -30,7 +30,7 @@ export default function Home() {
         <>
             <div className="video-background-container">
                 <div id="video-background">
-                    <video autoPlay muted loop>
+                    <video autoPlay muted loop playsInline disablePictureInPicture>
                         <source src={homeVideo} type="video/mp4" />
                         O seu navegador não suporta a reprodução de vídeo em HTML5.
                     </video>
