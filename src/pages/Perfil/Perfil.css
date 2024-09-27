@@ -1,0 +1,449 @@
+section {
+    height: 100vh;
+    background-color: #001242;
+    width: 100%;
+    gap: 0;
+}
+
+main{
+    width: 100%;
+}
+
+.seu-carro{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.time-pilotos{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.left {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 8%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.title{
+    margin-top: 80px;
+}
+
+.left .title {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.left h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    align-items: center;
+    font-weight: 500;
+}
+
+.left img {
+    width: 70%;
+}
+
+.right {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    animation: myAnim2 2s ease 0s 1 normal forwards;
+    justify-content: center;
+}
+
+.right ul, .right li {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.btn-editar {
+    margin-top: 5%;
+    height: 8%;
+    width: 30%;
+    border-radius: 5%;
+    background-color: #fff;
+    color: #001242;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 1000ms;
+}
+
+.time-pilotos .left-time-pilotos {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 5%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.time-pilotos .left-time-pilotos .title-left {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.name-team {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.brasao-time {
+    width: 30%;
+}
+
+.points-team {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.btn-editar-time {
+    margin-top: 5%;
+    height: 40%;
+    border-radius: 2%;
+    background-color: #fff;
+    color: #001242;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    transition: 1000ms;
+}
+
+.right-time-pilotos {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+}
+
+.container-right {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 4%;
+}
+
+.title-right {
+    font-size: 2rem;
+    color: #001242;
+    font-weight: 500;
+}
+
+.container-pilotos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 4%;
+}
+
+.piloto {
+    font-size: 1.5rem;
+    color: #001242;
+    gap: 5%;
+    width: 60%;
+    height: 15em;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.nome-piloto {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.container-pilotos img {
+    width: 90%;
+    border: 2px solid #001242;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+.btn-editar-pilotos {
+    height: 35%;
+    border-radius: 3px;
+    background-color: #001242;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 1000ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.aviso-mercado {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn-editar:hover {
+    background-color: #ffffffc4;
+}
+
+.btn-editar-pilotos:hover {
+    background-color: #001242bd;
+}
+
+.btn-editar-time:hover {
+    background-color: #ffffffc4;
+}
+
+.container-pilotos img:hover {
+    width: 100%;
+}
+
+.aviso-mercado-mobile{
+    display: none;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes myAnim2 {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .title{
+        font-size: 2rem !important;
+    }
+
+    .left img{
+        width: 80%;
+    }
+
+    .left h3{
+        font-size: 1.5rem;
+    }
+
+    .seu-carro{
+        grid-template-columns: none;
+    }
+
+    .right ul{
+        list-style-type: none;  
+        text-align: center;
+    }
+
+    .btn-editar{
+        width: 30% !important;
+    }
+
+    .right ul li{
+        font-size: 1.5rem;
+    }
+
+    .left-time-pilotos{
+        height: 500px !important;
+    }
+
+    .time-pilotos{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+
+    .btn-editar-time{
+        width: 25% !important;
+        border-radius: 1%;
+        height: fit-content;
+
+    }
+
+    .container-right{
+        gap: 0;
+    }
+
+    .container-pilotos {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .piloto{
+        gap: 0;
+        height: 10em;
+    }
+
+    .btn-editar-pilotos{
+        width: 40%;
+        height: 100% !important;
+    }
+
+    .aviso-mercado{
+        display: none;
+    }
+
+    .aviso-mercado-mobile{
+        font-size: 1.2rem;
+    }
+
+    .right-time-pilotos{
+        padding: 5%;
+        gap: 1%;
+    }
+
+    main{
+        overflow-x: visible;
+    }
+
+    .container-pilotos img{
+        width: 75% !important;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .title{
+        font-size: 2rem !important;
+    }
+
+    .left img{
+        width: 80%;
+    }
+
+    .left h3{
+        font-size: 1.5rem;
+    }
+
+    .seu-carro{
+        grid-template-columns: none;
+    }
+
+    .right ul{
+        list-style-type: none;  
+        text-align: center;
+    }
+
+    .btn-editar{
+        width: 15%;
+        height: 15%
+    }
+
+    .right ul li{
+        font-size: 1.5rem;
+    }
+
+    .time-pilotos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-time-pilotos{
+        height: 50%;
+        background-color: #fff;
+        gap: 0 !important;
+    }
+
+    .left-time-pilotos img{
+        width: 20%;
+    }
+
+    .right-time-pilotos{
+        height: 50%;
+    }
+
+    .piloto{
+        height: 10em;
+        width: 50%;
+        color: #fff;
+    }
+
+    .piloto img{
+        width: 50%;
+    }
+
+    .container-pilotos img{
+        border: 2px solid #fff;
+    }
+    .container-pilotos img:hover {
+        width: 55%;
+    }
+
+    .title-right{
+        color: #fff;
+    }
+
+    .title-left{
+        color: #001242 !important;
+    }
+
+    .name-team{
+        color: #001242;
+    }
+
+    .btn-editar-time{
+        background-color: #001242;
+        color: #fff;
+        width: 15%;
+        height: 50%;
+        border-radius: 5%;
+    }
+
+    .points-team{
+        color: #001242;
+    }
+
+
+
+    .right-time-pilotos{
+        height: 50%;
+        background-color: #001242;
+    }
+
+    .btn-editar-pilotos{
+        height: 65%;
+        background-color: #fff !important;
+        color: #001242;
+        border-radius: 5%;
+    }
+
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

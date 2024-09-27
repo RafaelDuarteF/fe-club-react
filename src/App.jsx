@@ -1,17 +1,13 @@
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from 'react-router-dom';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import './App.css';
-
-import CadastroPage from './pages/Cadastro/Cadastro';
 import Home from './pages/Home/Home';
-import Sobre from './pages/Sobre/Sobre';
 import LoginPage from './pages/Login/Login';
+import Sobre from './pages/Sobre/Sobre';
+import Perfil from './pages/Perfil/Perfil';
 import Corridas from './pages/Corridas/Corridas';
 import LayoutPadrao from './components/LayoutPadrao/LayoutPadrao';// Importando o layout padrão
+import CadastroPage from './pages/Cadastro/Cadastro';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +22,7 @@ const router = createBrowserRouter(
       {/* Rotas sem Header e Footer */}
       <Route path="/login" element={<LoginPage />} />
       <Route path="/cadastro" element={<CadastroPage />} />
+      <Route path="/perfil" element={<Perfil/>} />
     </>,
   ),
 );

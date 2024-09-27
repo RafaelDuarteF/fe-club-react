@@ -5,7 +5,9 @@
 
 .section-corridas{
     padding-top: 80px;
+    padding-bottom: 10px;
     background-color: #001242;
+    height: 100%;
 }
 
 .container-corridas{
@@ -324,6 +326,8 @@
 }
 .section-ranking{
     margin-bottom: 80px;
+    background-color: #E0E0E2;
+    height: 100%;
 }
 
 @media (max-width: 1100px) {

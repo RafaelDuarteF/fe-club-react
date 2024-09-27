@@ -10,6 +10,7 @@ export default function Menu({ menuOpened, setMenuOpened }) {
   };
 
   const handleRedirect = (route) => {
+    setMenuOpened(false);
     navigate(route);
   };
 
@@ -34,7 +35,7 @@ export default function Menu({ menuOpened, setMenuOpened }) {
             icon={'bx-collection'}
           />
           <RedirectMenu
-            redirect={() => handleRedirect('/')}
+            redirect={() => handleRedirect('/perfil')}
             title={'Seu Perfil'}
             icon={'bxs-car'}
           />
