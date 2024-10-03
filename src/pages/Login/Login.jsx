@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Importação das imagem
 import feClubLogo from "../../assets/img/default/feclub-logo.jfif";
@@ -41,8 +42,10 @@ export default function LoginPage() {
     if (validateEntrys(username, password)) {
       if (username === "user" && password === "123456") {
         alert("Logado com sucesso");
+        AsyncStorage.setItem('username', username);
         setUsername("");
         setPassword("");
+        
         navigate("/");
       } else {
         alert("Senha invalida");

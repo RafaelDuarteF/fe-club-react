@@ -60,6 +60,7 @@
     line-height: 1.6;
     display: grid;
     gap: 20px;
+    height: auto;
   }
   
   .container-fe-club h1 {

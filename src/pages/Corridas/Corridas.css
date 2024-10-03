@@ -39,6 +39,35 @@
     padding-inline-start: 0px;
 }
 
+/* Estilo para o seletor personalizado */
+.select-year {
+background-color: #f1f1f1; /* Cor de fundo */
+border: 2px solid #ccc; /* Borda ao redor do seletor */
+border-radius: 5px; /* Bordas arredondadas */
+padding: 10px; /* Espaçamento interno */
+font-size: 16px; /* Tamanho da fonte */
+color: #333; /* Cor do texto */
+outline: none; /* Remove a borda azul quando selecionado */
+cursor: pointer;
+width: 200px; /* Largura do seletor */
+transition: all 0.3s ease; /* Animação suave nas mudanças */
+margin-bottom: 25px;
+}
+
+/* Estilo para quando o seletor é clicado (ativa a animação) */
+.select-year :focus {
+border-color: #007bff; /* Cor da borda quando focado */
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra para o efeito de foco */
+}
+
+/* Estilo das opções no dropdown */
+.select-year option {
+padding: 10px; /* Espaçamento das opções */
+color: #333; /* Cor do texto nas opções */
+background-color: #fff; /* Cor de fundo das opções */
+}
+  
+
 .item-lista{
     display: flex;
     justify-content: space-between;

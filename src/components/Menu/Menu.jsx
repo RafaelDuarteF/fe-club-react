@@ -1,9 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import perfilIcon from '../../assets/img/default/perfil.png';
 import RedirectMenu from './RedirectsMenu/RedirectMenu';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useEffect, useState } from 'react';
 
 export default function Menu({ menuOpened, setMenuOpened }) {
   const navigate = useNavigate();
+  const [userName, setUserName] = useState(null);
 
   const handleFecharMenu = () => {
     setMenuOpened((menu) => !menu);
@@ -13,6 +16,22 @@ export default function Menu({ menuOpened, setMenuOpened }) {
     setMenuOpened(false);
     navigate(route);
   };
+
+  // Função para buscar o nome do usuário do AsyncStorage
+  const loadUserName = async () => {
+    const storedUserName = await AsyncStorage.getItem('username');
+    setUserName(storedUserName); // Atualiza o estado com o nome do usuário
+  };
+
+  // Função para deslogar o usuário
+  const handleUserLogout = async () => {
+    await AsyncStorage.removeItem('username'); // Remove o nome do usuário do AsyncStorage
+    setUserName(null); // Atualiza o estado com o nome do usuário
+  };
+
+  useEffect(() => {
+    loadUserName(); // Busca o nome do usuário quando o componente monta
+  }, []);
 
   return (
     <div className="menu">
@@ -49,18 +68,20 @@ export default function Menu({ menuOpened, setMenuOpened }) {
             title={'Login'}
             icon={'bx-book-alt'}
           />
-          <li>
-            <div className="profile-details">
-              <div className="profile-content">
-                <img src={perfilIcon} alt="profileImg" />
+          { userName &&
+            <li>
+              <div className="profile-details">
+                <div className="profile-content">
+                  <img src={perfilIcon} alt="profileImg" />
+                </div>
+                <div className="name-job">
+                  <div className="profile_name">{userName}</div>
+                  <div className="job">Conta Premium</div>
+                </div>
+                <i className="bx bx-log-out" onClick={() => handleUserLogout()}></i>
               </div>
-              <div className="name-job">
-                <div className="profile_name">Rafael Duarte</div>
-                <div className="job">Conta Premium</div>
-              </div>
-              <i className="bx bx-log-out"></i>
-            </div>
-          </li>
+            </li>
+          }
         </ul>
       </div>
     </div>
