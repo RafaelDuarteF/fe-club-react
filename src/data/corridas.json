@@ -12,7 +12,7 @@
       "alt": "Bandeira do Mexico"
     },
     "hour": "Corrida: 17h03 - 18h00",
-    "background": "./src/assets/img/landscapes/mexico-city.png"
+    "background": "./public/img/landscapes/mexico-city.png"
   },
   {
     "id": "2",
@@ -27,7 +27,7 @@
       "alt": "Bandeira da Arabia Saudita"
     },
     "hour": "Corrida: 14h04 - 15h30",
-    "background": "./src/assets/img/landscapes/diriyah.png"
+    "background": "./public/img/landscapes/diriyah.png"
   },
   {
     "id": "3",
@@ -42,7 +42,7 @@
       "alt": "Bandeira da Arabia Saudita"
     },
     "hour": "Corrida: 14h04 - 15h00",
-    "background": "./src/assets/img/landscapes/diriyah.png"
+    "background": "./public/img/landscapes/diriyah.png"
   },
   {
     "id": "4",
@@ -57,7 +57,7 @@
       "alt": "Bandeira do Brasil"
     },
     "hour": "Corrida: 14h03 - 15h00",
-    "background": "./src/assets/img/landscapes/sao-paulo.png"
+    "background": "./public/img/landscapes/sao-paulo.png"
   },
   {
     "id": "5",
@@ -72,7 +72,7 @@
       "alt": "Bandeira do Japão"
     },
     "hour": "Corrida: 03h03 - 04h00",
-    "background": "./src/assets/img/landscapes/tokio.png"
+    "background": "./public/img/landscapes/tokio.png"
   },
   {
     "id": "6",
@@ -87,7 +87,7 @@
       "alt": "Bandeira da Italia"
     },
     "hour": "Corrida: 10h03 - 11h00",
-    "background": "./src/assets/img/landscapes/misano.png"
+    "background": "./public/img/landscapes/misano.png"
   },
   {
     "id": "7",
@@ -102,7 +102,7 @@
       "alt": "Bandeira da Italia"
     },
     "hour": "Corrida: 10h03 - 11h00",
-    "background": "./src/assets/img/landscapes/misano.png"
+    "background": "./public/img/landscapes/misano.png"
   },
   {
     "id": "8",
@@ -117,7 +117,7 @@
       "alt": "Bandeira de Monaco"
     },
     "hour": "Corrida: 10h03 - 11h30",
-    "background": "./src/assets/img/landscapes/monaco.png"
+    "background": "./public/img/landscapes/monaco.png"
   },
   {
     "id": "9",
@@ -132,7 +132,7 @@
       "alt": "Bandeira da Alemanha"
     },
     "hour": "Corrida: 10h03 - 11h30",
-    "background": "./src/assets/img/landscapes/berlin.png"
+    "background": "./public/img/landscapes/berlin.png"
   },
   {
     "id": "10",
@@ -147,7 +147,7 @@
       "alt": "Bandeira da Alemanha"
     },
     "hour": "Corrida: 10h03 - 11h30",
-    "background": "./src/assets/img/landscapes/berlin.png"
+    "background": "./public/img/landscapes/berlin.png"
   },
   {
     "id": "11",
@@ -162,7 +162,7 @@
       "alt": "Bandeira da China"
     },
     "hour": "Corrida: 04h03 - 05h00",
-    "background": "./src/assets/img/landscapes/shangai.png"
+    "background": "./public/img/landscapes/shangai.png"
   },
   {
     "id": "12",
@@ -177,7 +177,7 @@
       "alt": "Bandeira da China"
     },
     "hour": "Corrida: 04h03 - 05h00",
-    "background": "./src/assets/img/landscapes/shangai.png"
+    "background": "./public/img/landscapes/shangai.png"
   },
   {
     "id": "13",
@@ -192,7 +192,7 @@
       "alt": "Bandeira dos Estados Unidos"
     },
     "hour": "Corrida: 18h03 - 19h30",
-    "background": "./src/assets/img/landscapes/portland.png"
+    "background": "./public/img/landscapes/portland.png"
   },
   {
     "id": "14",
@@ -207,7 +207,7 @@
       "alt": "Bandeira dos Estados Unidos"
     },
     "hour": "Corrida: 18h03 - 19h30",
-    "background": "./src/assets/img/landscapes/portland.png"
+    "background": "./public/img/landscapes/portland.png"
   },
   {
     "id": "15",
@@ -222,7 +222,7 @@
       "alt": "Bandeira do Reino Unido"
     },
     "hour": "Corrida: 13h03 - 14h30",
-    "background": "./src/assets/img/landscapes/londres.png"
+    "background": "./public/img/landscapes/londres.png"
   },
   {
     "id": "16",
@@ -237,6 +237,6 @@
       "alt": "Bandeira do Reino Unido"
     },
     "hour": "Corrida: 13h03 - 14h30",
-    "background": "./src/assets/img/landscapes/londres.png"
+    "background": "./public/img/landscapes/londres.png"
   }
 ]

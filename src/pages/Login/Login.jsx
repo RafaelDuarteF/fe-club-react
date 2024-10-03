@@ -98,7 +98,7 @@ export default function LoginPage() {
         <video autoPlay muted loop playsInline disablePictureInPicture>
           <source src={home} type="video/mp4" />
           O seu navegador não suporta a reprodução de vídeo em HTML5.
-        </video>
+        </video>''
       </div>
     </main>
   );
