@@ -8,7 +8,7 @@
       "month": "JAN"
     },
     "flag": {
-      "src": "./src/assets/img/flags/mexico.svg",
+      "src": "./img/flags/mexico.svg",
       "alt": "Bandeira do Mexico"
     },
     "hour": "Corrida: 17h03 - 18h00",
@@ -23,7 +23,7 @@
       "month": "JAN"
     },
     "flag": {
-      "src": "./src/assets/img/flags/arabia-saudita.svg",
+      "src": "./img/flags/arabia-saudita.svg",
       "alt": "Bandeira da Arabia Saudita"
     },
     "hour": "Corrida: 14h04 - 15h30",
@@ -38,7 +38,7 @@
       "month": "JAN"
     },
     "flag": {
-      "src": "./src/assets/img/flags/arabia-saudita.svg",
+      "src": "./img/flags/arabia-saudita.svg",
       "alt": "Bandeira da Arabia Saudita"
     },
     "hour": "Corrida: 14h04 - 15h00",
@@ -53,7 +53,7 @@
       "month": "MAR"
     },
     "flag": {
-      "src": "./src/assets/img/flags/brasil.svg",
+      "src": "./img/flags/brasil.svg",
       "alt": "Bandeira do Brasil"
     },
     "hour": "Corrida: 14h03 - 15h00",
@@ -68,7 +68,7 @@
       "month": "MAR"
     },
     "flag": {
-      "src": "./src/assets/img/flags/japao.svg",
+      "src": "./img/flags/japao.svg",
       "alt": "Bandeira do Japão"
     },
     "hour": "Corrida: 03h03 - 04h00",
@@ -83,7 +83,7 @@
       "month": "ABR"
     },
     "flag": {
-      "src": "./src/assets/img/flags/italia.svg",
+      "src": "./img/flags/italia.svg",
       "alt": "Bandeira da Italia"
     },
     "hour": "Corrida: 10h03 - 11h00",
@@ -98,7 +98,7 @@
       "month": "ABR"
     },
     "flag": {
-      "src": "./src/assets/img/flags/italia.svg",
+      "src": "./img/flags/italia.svg",
       "alt": "Bandeira da Italia"
     },
     "hour": "Corrida: 10h03 - 11h00",
@@ -113,7 +113,7 @@
       "month": "ABR"
     },
     "flag": {
-      "src": "./src/assets/img/flags/monaco.svg",
+      "src": "./img/flags/monaco.svg",
       "alt": "Bandeira de Monaco"
     },
     "hour": "Corrida: 10h03 - 11h30",
@@ -128,7 +128,7 @@
       "month": "MAIO"
     },
     "flag": {
-      "src": "./src/assets/img/flags/alemanha.svg",
+      "src": "./img/flags/alemanha.svg",
       "alt": "Bandeira da Alemanha"
     },
     "hour": "Corrida: 10h03 - 11h30",
@@ -143,7 +143,7 @@
       "month": "MAIO"
     },
     "flag": {
-      "src": "./src/assets/img/flags/alemanha.svg",
+      "src": "./img/flags/alemanha.svg",
       "alt": "Bandeira da Alemanha"
     },
     "hour": "Corrida: 10h03 - 11h30",
@@ -158,7 +158,7 @@
       "month": "MAIO"
     },
     "flag": {
-      "src": "./src/assets/img/flags/china.svg",
+      "src": "./img/flags/china.svg",
       "alt": "Bandeira da China"
     },
     "hour": "Corrida: 04h03 - 05h00",
@@ -173,7 +173,7 @@
       "month": "MAIO"
     },
     "flag": {
-      "src": "./src/assets/img/flags/china.svg",
+      "src": "./img/flags/china.svg",
       "alt": "Bandeira da China"
     },
     "hour": "Corrida: 04h03 - 05h00",
@@ -188,7 +188,7 @@
       "month": "JUN"
     },
     "flag": {
-      "src": "./src/assets/img/flags/us.svg",
+      "src": "./img/flags/us.svg",
       "alt": "Bandeira dos Estados Unidos"
     },
     "hour": "Corrida: 18h03 - 19h30",
@@ -203,7 +203,7 @@
       "month": "JUN"
     },
     "flag": {
-      "src": "./src/assets/img/flags/us.svg",
+      "src": "./img/flags/us.svg",
       "alt": "Bandeira dos Estados Unidos"
     },
     "hour": "Corrida: 18h03 - 19h30",
@@ -218,7 +218,7 @@
       "month": "JUL"
     },
     "flag": {
-      "src": "./src/assets/img/flags/reino-unido.svg",
+      "src": "./img/flags/reino-unido.svg",
       "alt": "Bandeira do Reino Unido"
     },
     "hour": "Corrida: 13h03 - 14h30",
@@ -233,7 +233,7 @@
       "month": "JUL"
     },
     "flag": {
-      "src": "./src/assets/img/flags/reino-unido.svg",
+      "src": "./img/flags/reino-unido.svg",
       "alt": "Bandeira do Reino Unido"
     },
     "hour": "Corrida: 13h03 - 14h30",
