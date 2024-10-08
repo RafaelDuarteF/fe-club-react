@@ -3,7 +3,7 @@ import menuIcon from '../../assets/img/default/menu.png';
 import perfilIcon from '../../assets/img/default/perfil.png';
 import Menu from '../Menu/Menu';
 
-export default function Header() {
+export default function Header({isShadowScroll = false}) {
   const [menuOpened, setMenuOpened] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <>
       <Menu menuOpened={menuOpened} setMenuOpened={setMenuOpened} />
-      <header className={`${scrolled ? 'scrolled' : ''}`}>
+      <header className={`${scrolled ? 'scrolled' : isShadowScroll ? 'scrolled' : ''}`}>
         <img className="imgMenu" src={menuIcon} onClick={handleAbrirMenu} />
         <img className="imgProfile" src={perfilIcon} />
       </header>

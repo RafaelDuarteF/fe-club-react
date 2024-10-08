@@ -41,12 +41,11 @@ export default function LoginPage() {
   const login = () => {
     if (validateEntrys(username, password)) {
       if (username === "user" && password === "123456") {
-        alert("Logado com sucesso");
         AsyncStorage.setItem('username', username);
         setUsername("");
         setPassword("");
         
-        navigate("/");
+        navigate("/perfil");
       } else {
         alert("Senha invalida");
       }

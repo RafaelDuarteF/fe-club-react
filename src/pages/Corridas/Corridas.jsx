@@ -72,7 +72,6 @@ export default function Corridas() {
           ))}
         </RankingContainer>
       </section>
-      <Footer />
     </div>
   );
 }

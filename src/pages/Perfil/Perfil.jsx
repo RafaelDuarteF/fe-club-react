@@ -9,10 +9,15 @@ import fotoTime from '../../assets/img/Perfil/foto-time.png';
 import carro from '../../assets/img/Perfil/imgSeuCarro.png';
 import piloto1 from '../../assets/img/Perfil/piloto1.png';
 import piloto2 from '../../assets/img/Perfil/piloto2.png';
+import { useNavigate } from 'react-router-dom';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Perfil() {
   const [timeLeft, setTimeLeft] = useState('');
+  const [selectedPilots, setSelectedPilots] = useState([]); // Novo estado para armazenar os pilotos selecionados
+  const [points, setPoints] = useState(100);
   const countDownDate = new Date("September 24, 2024 00:00:00").getTime();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,8 +37,26 @@ export default function Perfil() {
       }
     }, 1000);
 
+    const asyncPoints = async () => {
+      const pointsStorage = await AsyncStorage.getItem('points');
+      if (pointsStorage) {
+        setPoints(JSON.parse(pointsStorage));
+      } else {
+        AsyncStorage.setItem('points', JSON.stringify(points));
+      }
+    }
+
+    asyncPoints();
+    
     return () => clearInterval(interval); 
   }, [countDownDate]);
+
+  useEffect(() => {
+    const pilots = localStorage.getItem('selectedPilots');
+    if (pilots) {
+      setSelectedPilots(JSON.parse(pilots)); // Armazena os pilotos selecionados do localStorage
+    }
+  }, []);
 
   return (
     <>
@@ -60,23 +83,26 @@ export default function Perfil() {
             <span className="name-team">Los Corridas</span>
             <img src={fotoTime} alt="Brasão do seu time" className="brasao-time" />
             <button className="btn-editar-time">EDITAR</button>
-            <span className="points-team">1432 pontos</span>
+            <span className="points-team">{points.toFixed(2)} coins</span>
           </div>
           <div className="right-time-pilotos">
             <div className="container-right">
               <span className="title-right">Seus Pilotos</span>
               <div className="container-pilotos">
-                <div className="piloto">
-                  <span className="nome-piloto">Nick Cassidy</span>
-                  <img src={piloto1} alt="Seu piloto 1" />
-                </div>
-                <div className="piloto">
-                  <span className="nome-piloto">Edoardo Mortara</span>
-                  <img src={piloto2} alt="Seu piloto 2" />
-                </div>
+                {/* Renderiza os pilotos selecionados */}
+                {selectedPilots.length > 0 ? (
+                  selectedPilots.map((pilot, index) => (
+                    <div className="piloto" key={pilot.id}>
+                      <span className="nome-piloto">{pilot.name}</span>
+                      <img src={index === 0 ? piloto1 : piloto2} alt={`Seu piloto ${pilot.name}`} /> {/* Exemplo para usar as imagens */}
+                    </div>
+                  ))
+                ) : (
+                  <p>Nenhum piloto selecionado.</p>
+                )}
               </div>
             </div>
-            <button className="btn-editar-pilotos">EDITAR PILOTOS</button>
+            <button className="btn-editar-pilotos" onClick={() => navigate('/selecaoPilotos')}>{selectedPilots.length > 0 ? "EDITAR PILOTOS" : "SELECIONAR PILOTOS"}</button>
 
             {/* Renderiza o aviso somente se o mercado não estiver fechado */}
             { !timeLeft.includes('FECHADO') && (
@@ -96,14 +122,14 @@ export default function Perfil() {
 
             {/* Renderiza a mensagem "O MERCADO ESTÁ FECHADO!" se estiver fechado */}
             { timeLeft.includes('FECHADO') && (
-              <span className="aviso-mercado-fechado" style={{ color: 'red' }}>
-                {timeLeft}
+              <span className="aviso-mercado-fechado" style={{ color: 'green' }}>
+                {/* {timeLeft} */}
+                O MERCADO ESTÁ ABERTO
               </span>
             )}
           </div>
         </section>
       </main>
-    
     </>
   );
 }

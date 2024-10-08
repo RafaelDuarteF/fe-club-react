@@ -1,0 +1,113 @@
+.pilots-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pilots-container h2, .pilots-container h3 {
+    text-align: center;
+    color: #333;
+}
+
+.pilots-container h2 {
+    margin-top: 70px;
+}
+
+.pilots-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.pilots-list {
+    list-style-type: none;
+    padding: 0;
+    width: 60%;
+}
+
+.pilot-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.pilot-item:hover {
+    background-color: #e9e9f0;
+}
+
+.pilot-info h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.pilot-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.select-btn, .deselect-btn, .save-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Gemunu Libre';
+}
+
+.select-btn {
+    background-color: #001242;
+    color: white;
+}
+
+.deselect-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.save-btn {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.select-btn:hover, .deselect-btn:hover, .save-btn:hover {
+    opacity: 0.8;
+}
+
+.selected-pilots {
+    margin-top: 20px;
+}
+
+.selected-pilots ul {
+    list-style-type: none;
+    padding: 0;
+    color: #333;
+}
+
+.selected-pilots li {
+    background-color: #a8a8a8;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.total-value h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

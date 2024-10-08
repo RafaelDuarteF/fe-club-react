@@ -164,7 +164,7 @@ main{
 }
 
 .container-pilotos img {
-    width: 90%;
+    width: 75%;
     border: 2px solid #001242;
     border-radius: 100%;
     cursor: pointer;
@@ -205,12 +205,13 @@ main{
 }
 
 .container-pilotos img:hover {
-    width: 100%;
+    transform: scale(1.05);
 }
 
 .aviso-mercado-mobile{
     display: none;
 }
+
 
 @keyframes myAnim {
     0% {

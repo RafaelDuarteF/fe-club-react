@@ -7,6 +7,7 @@ import Perfil from './pages/Perfil/Perfil';
 import Corridas from './pages/Corridas/Corridas';
 import LayoutPadrao from './components/LayoutPadrao/LayoutPadrao';// Importando o layout padrão
 import CadastroPage from './pages/Cadastro/Cadastro';
+import SelecaoPilotos from './pages/SelecaoPilotos/SelecaoPilotos';
 
 
 const router = createBrowserRouter(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="/login" element={<LoginPage />} />
       <Route path="/cadastro" element={<CadastroPage />} />
       <Route path="/perfil" element={<Perfil/>} />
+      <Route path="/selecaoPilotos" element={<SelecaoPilotos/>} />
     </>,
   ),
 );

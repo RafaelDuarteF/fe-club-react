@@ -6,7 +6,7 @@ export default function RankingItem({ id, posicao, nome, equipe, pontos }) {
         <span className="lista-nome">{nome}</span>
         <span className="lista-equipe">{equipe}</span>
       </div>
-      <div className="lista-pontos">{pontos}</div>
+      <div className="lista-pontos">{pontos == '' ? 0 : pontos}</div>
     </li>
   );
 }
