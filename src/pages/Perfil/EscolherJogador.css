@@ -1,0 +1,139 @@
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 100px;
+    background-color: #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+/* Coluna de compra de pilotos */
+.comprar-pilotos {
+    width: 60%;
+    background-color: #c4c4c4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.comprar-pilotos h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Lista de pilotos */
+.pilotos-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* Cartão de piloto */
+.piloto-card {
+    background-color: #d9d9d9;
+    border-radius: 75px;
+    text-align: center;
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+.piloto-imagem {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.piloto-nome {
+    font-size: 16px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.piloto-preco {
+    font-size: 14px;
+    color: #333333;
+}
+
+.botao-comprar {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.botao-comprar:hover {
+    background-color: #005599;
+}
+
+/* Coluna de saldo e pilotos comprados */
+.saldo-comprados {
+    width: 35%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.saldo-comprados h3 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Lista de pilotos comprados */
+.pilotos-comprados-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Cartão de piloto comprado */
+.piloto-comprado-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.piloto-info {
+    margin-left: 10px;
+    color: #003366;
+}
+
+.botao-vender {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.botao-vender:hover {
+    background-color: #005599;
+}
+
+.concluir {
+    width: 100%;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.concluir:hover {
+    background-color: #005599;
+}
